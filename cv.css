@@ -3,12 +3,7 @@ body.cv {
     background-color:white;
     background-image:url(image/1.jpg);
     }
-.contact {
-        color:black;
-        background-color:white;
-        background-image:url(image/contact.png);
-        background-size: 100%;
-        }
+
     
 
 h1.title {
@@ -16,11 +11,20 @@ h1.title {
     text-shadow:0px 5px 10px #4d1454;
     font-family:Trattatello, fantasy;
     font-weight: 1500;
-    border: 4mm ridge rgb(170, 50, 220, .6);
+    font-size: 60px;
+    float: center;
 }
 
 .rc {
-    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    float: center;
+    text-shadow:0px 5px 10px #4d1454;
+    font-family:Trattatello, fantasy;
+    font-size: 30px;
+    
+
 }
 
 .social {
