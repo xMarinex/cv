@@ -1,36 +1,104 @@
 body.cv {
     color:black;
     background-color:white;
-    background-image:url(image/1.jpg);
+    background: url(../image/fond.png) no-repeat center fixed;
+    background-size: cover;
     }
 
-    
-
 h1.title {
-    text-align: center;
     text-shadow:0px 5px 10px #4d1454;
-    font-family:Trattatello, fantasy;
-    font-weight: 1500;
-    font-size: 60px;
-    float: center;
+    font-family: 'AIRBORNEGPBold'; 
+   font-weight: bold; 
+   font-style: normal;
+   position: relative;
+   float: left;
+   right: auto;
+   left:20% ;
+   top: 0;
+}
+
+#contact {
+    float: right;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+#contact img {
+    width: 250px;
+    height: 250px;
+}
+
+#contact div {
+    width: 250px;
+    vertical-align:top right;
+    display: inline-block;
 }
 
 .rc {
     box-sizing: border-box;
     width: 100%;
     padding: 5px;
-    float: center;
+    float: left;
     text-shadow:0px 5px 10px #4d1454;
-    font-family:Trattatello, fantasy;
-    font-size: 30px;
-    
-
+    font-family: 'AmaranthRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
 }
 
-.social {
-    float:right;
+#conteiner {display:inline-table;
+    text-shadow:0px 5px 10px #4d1454;
+    font-family: 'AmaranthRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
 }
-
-#conteiner {display:inline-table;}
 #experience {display:table-cell;}
 #formation {display:table-cell;}
+
+.cleor .apres, .cleor:hover .avant {
+    display: none;
+}
+.cleor:hover .apres {
+    display: block;
+}
+.monaco .apres, .monaco:hover .avant {
+    display: none;
+}
+.monaco:hover .apres {
+    display: block;
+}
+.cocktail .apres, .cocktail:hover .avant {
+    display: none;
+}
+.cocktail:hover .apres {
+    display: block;
+}
+.fnac .apres, .fnac:hover .avant {
+    display: none;
+}
+.fnac:hover .apres {
+    display: block;
+}
+.leclerc .apres, .leclerc:hover .avant {
+    display: none;
+}
+.leclerc:hover .apres {
+    display: block;
+}
+.quickv .apres, .quickv:hover .avant {
+    display: none;
+}
+.quickv:hover .apres {
+    display: block;
+}
+.thanato .apres, .thanato:hover .avant {
+    display: none;
+}
+.thanato:hover .apres {
+    display: block;
+}
+.microvella .apres, .microvella:hover .avant {
+    display: none;
+}
+.microvella:hover .apres {
+    display: block;
+}
