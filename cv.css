@@ -13,47 +13,60 @@ h1.title {
    position: relative;
    float: left;
    right: auto;
-   left:20% ;
+   left:5% ;
    top: 0;
 }
 
-#contact {
-    float: right;
-    position: relative;
-    top: 0;
-    right: 0;
-}
-#contact img {
-    width: 250px;
-    height: 250px;
+.id {
+    padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+    float:left;
+    
 }
 
-#contact div {
-    width: 250px;
-    vertical-align:top right;
-    display: inline-block;
+.contact {
+    display:inline-flex;
+  width:100%;
+    height: 300px;
+  background:url(image/contact3.png) center center no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  align-items:center;
+  justify-content:center;
+    text-align: center;
+    text-shadow:0px 3px 3px #4d1454;
+    font-family: 'AIRBORNEGPBold';
+   font-weight: normal; 
+   font-style: normal;
+   padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+    }
+
+.flex-row{
+  display:flex;
+  justify-content:center;
 }
+.contact .container{
+  flex:1;
+}
+
 
 .rc {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5px;
+
     float: left;
-    text-shadow:0px 5px 10px #4d1454;
+    text-shadow:0px 5px 5px #4d1454;
     font-family: 'AmaranthRegular'; 
    font-weight: normal; 
-   font-style: normal; 
+   font-style: normal;
+    padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-#conteiner {display:inline-table;
-    text-shadow:0px 5px 10px #4d1454;
-    font-family: 'AmaranthRegular'; 
-   font-weight: normal; 
-   font-style: normal; 
-}
-#experience {display:table-cell;}
-#formation {display:table-cell;}
-
 .cleor .apres, .cleor:hover .avant {
     display: none;
 }
@@ -101,4 +114,104 @@ h1.title {
 }
 .microvella:hover .apres {
     display: block;
+}
+
+
+
+.enhaut {text-align: center;
+    text-shadow:0px 2px 5px #4d1454;
+    font-family: 'AmaranthRegular'; 
+   font-weight: normal; 
+   font-style: normal;
+    
+}
+
+#conteiner {display:inline-table;
+    text-shadow:0px 2px 5px #4d1454;
+    font-family: 'AmaranthRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
+}
+#experience {display:table-cell;
+    text-shadow:0px 2px 5px #4d1454;
+    font-family: 'AmaranthRegular'; 
+   font-weight: normal; 
+   font-style: normal;
+    padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#formation {display:table-cell;
+     text-shadow:0px 2px 5px #4d1454;
+    font-family: 'AmaranthRegular'; 
+   font-weight: normal; 
+   font-style: normal;
+    padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#competences {display: table-cell;
+    border: solid thick darkviolet;
+ border-radius: 1em;
+box-shadow: black 0.5em 0.5em 0.3em;
+     text-shadow:0px 2px 5px #4d1454;
+    font-family: 'AmaranthRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
+    padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#basdepage {display:inline-table;
+    text-shadow:0px 2px 5px #4d1454;
+    font-family: 'AmaranthRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
+    
+}
+
+
+#l { text-shadow:0px 2px 5px #4d1454;
+    font-family: 'AmaranthRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
+    
+}
+
+#anim1 {
+    animation-duration: 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 4px;
+    width: 100%;
+  }
+}
+
+#anim2 {
+     animation-duration: 6s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100; 
+  }
+
+  to {
+    margin-left: 4px;
+    width: 100%;
+  }
 }
