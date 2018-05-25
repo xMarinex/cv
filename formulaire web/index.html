@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> Test Formulaire web</title>
+        <meta charset="utf-8">
+        <style>
+            label{
+                display: inline-block;
+                min-width: 200px;
+            }
+        </style>
+        <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+        <script>
+        $(document).ready(function(){
+            var limit = $('.limit');
+            var message = $('#message');
+            var submit = $('#submit');
+            
+            $(limit).txt ('10');
+            
+            $(message).keyup (function(){
+                              
+                 var rest = 10- $(this).val().length;
+            if(rest<0)
+            {$(limit).css('color','#f55');
+             $(submit).attr('disabled','disabled');
+            }
+            else
+            {$(limit).css('color': '#000');
+             $(submit).removeAttr('disabled');
+            }
+             )};
+            )};
+        
+        </script>
+        
+                
+      
+
+     
+        
+
+
+    </head>
+    
+    <body>
+        <h1> Test Formulaire Web</h1>
+        
+<div align=center> 
+    <form method=POST action=formmail.php > 
+        <input type=hidden name=subject value=formmail> 
+        <table> <tr>
+            <td>Nom-Prenom:</td> <td><input type=text name=realname size=30></td>
+            </tr> <tr>
+            <td>Votre Site/blog*:</td> <td><input type=text name=site size=30></td></tr>
+            <tr><td>Votre Email:</td> <td><input type=text name=email size=30></td></tr> <tr><td>Sujet:</td> <td><input type=text name=title size=30></td></tr> <tr><td colspan=2>Votre message:<br> <textarea COLS=50 ROWS=6 name=comments></textarea> </td></tr> </table> <br> <input type=submit value=Envoyer> - <input type=reset value=Annuler> </form> </div> 
+        
+        
+
+    </body>
+</html>
